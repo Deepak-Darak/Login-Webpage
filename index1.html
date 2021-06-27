@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>"My Profile"</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<script src="https://kit.fontawesome.com/acd2e921a5.js" crossorigin="anonymous"></script>
+</head>
+<script>
+function Feedback() 
+{
+	var mail = document.forms["Form"]["mail"].value;
+	var msg = document.forms["Form"]["msg"].value;
+	alert("Thank you for your Feedback")
+}
+</script>
+<body>
+  <div class="head">
+      <a href="index.html">Log Out</a>
+  </div>
+	<div class="profile">
+		<div class="dp">
+      <img src="d1.jpeg" alt="Profile picture">
+    </div>
+		<h2 class="text">Deepak Darak</h2>
+		<h3 class="text">UG Student</h3>
+		<p>
+			A student of Electronics and communication department,NIT Patna.<br>
+			Begginer in C language.<br>
+			Begginer in HTML and CSS.
+		</p>
+		<div class="social">
+			<i class="fas fa-phone-alt"></i>
+				9610438960<br>
+			<i class="fas fa-envelope"></i> 
+			<a href="mailto:deepakd.ug20.ece@nitp.ac.in">
+				deepakd.ug20.ece@nitp.ac.in<br></a>
+			<a href="https://www.instagram.com/deepakmaheswari1309/">
+				<i class="fab fa-instagram"></i> Instagram<br>
+			</a>
+			<a href="https://www.linkedin.com/in/deepak-darak">
+				<i class="fab fa-linkedin"></i> Linked in<br>
+			</a>
+			<a href="https://github.com/Deepak-Darak">
+				<i class="fab fa-github-square"></i> GitHub<br>
+			</a>
+		</div>
+		<div class="btn">
+			<a href="resume.pdf"preview><input class="about" type="button" name="" value="About me">
+			</a>
+		</div>
+	</div>
+  <div class="Feedback">
+    <form name="Form" method="post">
+    <h3>Please provide your Feedback</h3>
+    <div class="textbox">
+      <input type="text" placeholder="Your Mail" name="mail" value="">
+      <input type="text" placeholder="Feedback" name="msg" value="">
+    </div>
+    <div class="send">
+      <input type="button" value="Send" id="logbutton" onclick="Feedback()"">
+    </div>
+</body>
+</html>

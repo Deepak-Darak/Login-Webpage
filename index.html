@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>"LOGIN FORM"</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>		
+<script>
+function Myfunction() 
+{
+	var un = document.forms["Form"]["Uname"].value;
+	var pw = document.forms["Form"]["Pass"].value;
+	if(un=="Deepak" && pw=="123")
+	{
+		window.location.href="index1.html";
+	}
+	else
+	{
+		alert("Invalid Username and Password")
+	}
+}
+</script>
+
+<body>
+	<div class="login">
+		<h1>Log-in</h1>
+		<form name="Form" method="post">
+		<div class="textbox">
+			<input type="Users" placeholder="Username" name="Uname" value="">
+		</div>
+		<div class="textbox">
+			<input type="password" placeholder="Password" name="Pass" value="">
+		</div>
+	<input class="btn" type="button" id="logbutton" name="log" value="Sign in" onclick="Myfunction()">
+	</div>
+
+
+</body>
